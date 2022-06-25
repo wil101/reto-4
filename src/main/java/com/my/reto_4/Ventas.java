@@ -15,16 +15,21 @@ public class Ventas {
     private String descripcion;
     private static int existencias;
 
-    public Ventas(int id, LocalDateTime fechaYHora, String tipoDeDocumento, 
+    public Ventas(LocalDateTime fechaYHora, String tipoDeDocumento, 
             int numDocumento, String nombre, int precio, String descripcion) {
         
-        this.id = id;
+        existencias++;
+        this.id = 202206000 + existencias;
         this.fechaYHora = fechaYHora;
         this.tipoDeDocumento = tipoDeDocumento;
         this.numDocumento = numDocumento;
         this.nombre = nombre;
         this.precio = precio;
         this.descripcion = descripcion;
+    }
+
+    public int getId() {
+        return id;
     }
 
     public static int getExistencias() {
