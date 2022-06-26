@@ -28,12 +28,19 @@ public class Ventas {
         this.descripcion = descripcion;
     }
 
-    public int getId() {
-        return id;
-    }
-
     public static int getExistencias() {
         return existencias;
+    }
+    
+    
+    public String getTiempoDeVenta(){
+        LocalDateTime fechaActual = LocalDateTime.now();
+        return "Han pasado " + (fechaActual.getDayOfYear() - fechaYHora.getDayOfYear()) + " días";
+    }
+
+    @Override
+    public String toString() {
+        return "Ventas{" + "id=" + id + ", fechaYHora=" + fechaYHora + ", tipoDeDocumento=" + tipoDeDocumento + ", numDocumento=" + numDocumento + ", nombre=" + nombre + ", precio=" + precio + ", descripcion=" + descripcion + '}';
     }
     
     
