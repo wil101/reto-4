@@ -17,7 +17,7 @@ public class seguro {
         existencias++;
         this.nombreEmpresa = nombreEmpresa;
         this.descripcion = descripcion;
-        this.id = id;
+        this.id = 20220600 + existencias++;
         this.fechaInicial = fechaInicial;
         this.fechaFinal = fechaFinal;
     }
@@ -34,12 +34,13 @@ public class seguro {
        
    }
    
-   public void prueba() throws ParseException{
+   /*public void prueba() throws ParseException{
        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
        Date a = dateFormat.parse("2022-02-14");
        Date b = dateFormat.parse("2022-02-23");
        int dias = (int) ((b.getTime() - a.getTime()) / 86400000);
        System.out.println(dias);
    }
+   */
    
 }
