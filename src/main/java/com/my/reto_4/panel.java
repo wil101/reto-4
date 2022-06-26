@@ -10,10 +10,10 @@ public class panel {
     String tipoDepanel,descripcion;
     int anioDeFabricacion;
 
-    public panel(int id, int numeroDeSerie, int modelo, int precio, String tipoDepanel, 
+    public panel(int numeroDeSerie, int modelo, int precio, String tipoDepanel, 
             String descripcion, int anioDeFabricacion) {
         existencias++;
-        this.id = id;
+        this.id = 202206000 + existencias;
         this.numeroDeSerie = numeroDeSerie;
         this.modelo = modelo;
         this.precio = precio;
