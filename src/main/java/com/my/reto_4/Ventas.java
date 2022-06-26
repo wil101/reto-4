@@ -15,10 +15,11 @@ public class Ventas {
     private String descripcion;
     private static int existencias;
 
-    public Ventas(int id, LocalDateTime fechaYHora, String tipoDeDocumento, 
+    public Ventas(LocalDateTime fechaYHora, String tipoDeDocumento, 
             int numDocumento, String nombre, int precio, String descripcion) {
         
-        this.id = id;
+        existencias++;
+        this.id = 202206000 + existencias;
         this.fechaYHora = fechaYHora;
         this.tipoDeDocumento = tipoDeDocumento;
         this.numDocumento = numDocumento;
@@ -29,6 +30,17 @@ public class Ventas {
 
     public static int getExistencias() {
         return existencias;
+    }
+    
+    
+    public String getTiempoDeVenta(){
+        LocalDateTime fechaActual = LocalDateTime.now();
+        return "Han pasado " + (fechaActual.getDayOfYear() - fechaYHora.getDayOfYear()) + " días";
+    }
+
+    @Override
+    public String toString() {
+        return "Ventas{" + "id=" + id + ", fechaYHora=" + fechaYHora + ", tipoDeDocumento=" + tipoDeDocumento + ", numDocumento=" + numDocumento + ", nombre=" + nombre + ", precio=" + precio + ", descripcion=" + descripcion + '}';
     }
     
     
