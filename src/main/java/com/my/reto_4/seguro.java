@@ -14,6 +14,7 @@ public class seguro {
     int id;
 
     public seguro(String nombreEmpresa, String descripcion, int id, String fechaInicial, String fechaFinal) {
+        existencias++;
         this.nombreEmpresa = nombreEmpresa;
         this.descripcion = descripcion;
         this.id = id;
