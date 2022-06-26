@@ -4,8 +4,8 @@
 
 
 
+![Untitled Diagram drawio](https://user-images.githubusercontent.com/101955537/175798746-f32754ba-237d-4c5c-b2d5-f6baf2723fa3.png)
 
-![_Diagrama drawio](https://user-images.githubusercontent.com/101955537/175798684-a8d920be-b525-44e2-aef5-566db3657414.png)
 
 
 Hecho por 
