@@ -22,6 +22,10 @@ public class panel {
         this.anioDeFabricacion = anioDeFabricacion;
     }
     
+    public int getId(){
+        return id;
+    }
+    
     public void getTiempoDeUso(){
     String uso = "";
         if(anioDeFabricacion > 0 && anioDeFabricacion <= 1){
