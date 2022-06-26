@@ -7,7 +7,7 @@
 
 
 
-echo por 
+Hecho por 
 Wilmar Osorio & Emanuel Lopez
 
 
