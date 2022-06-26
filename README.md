@@ -5,6 +5,7 @@
 
 
 
+![_Diagrama drawio](https://user-images.githubusercontent.com/101955537/175798684-a8d920be-b525-44e2-aef5-566db3657414.png)
 
 
 Hecho por 
