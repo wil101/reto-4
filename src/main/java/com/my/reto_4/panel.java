@@ -12,6 +12,7 @@ public class panel {
 
     public panel(int id, int numeroDeSerie, int modelo, int precio, String tipoDepanel, 
             String descripcion, int anioDeFabricacion) {
+        existencias++;
         this.id = id;
         this.numeroDeSerie = numeroDeSerie;
         this.modelo = modelo;
